@@ -21,6 +21,11 @@ public class PauseManager : MonoBehaviour
         {
             StartCoroutine(Pause());
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(1);
+        }
+
     }
     public void PauseButton()
     {
