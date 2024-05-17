@@ -389,6 +389,7 @@
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/CanvasManager.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/OneWay.cs"
 "Assets/Scripts/PauseManager.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Rhino.cs"
