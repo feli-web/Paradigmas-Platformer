@@ -7,11 +7,11 @@ public class Rhino : Enemy
 {
     public float speedMultiplier;
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    protected override void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(1);
+            collision.gameObject.GetComponent<PlayerMove>().Death();
         }
     }
     public void OnTriggerEnter2D(Collider2D collision)

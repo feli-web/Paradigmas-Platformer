@@ -387,13 +387,16 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.1.17f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Bee.cs"
 "Assets/Scripts/CameraMovement.cs"
+"Assets/Scripts/CameraMovementUpward.cs"
 "Assets/Scripts/CanvasManager.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/Menu.cs"
 "Assets/Scripts/OneWay.cs"
 "Assets/Scripts/PauseManager.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Rhino.cs"
 "Assets/Scripts/Slimes.cs"
+"Assets/Scripts/Traps.cs"
 -langversion:9.0
 
 /deterministic

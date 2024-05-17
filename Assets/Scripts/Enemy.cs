@@ -13,11 +13,13 @@ public class Enemy : MonoBehaviour
 
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
+    protected Vector2 originalPosition;
 
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        originalPosition = transform.position;
 
     }
     protected virtual void Update()
@@ -48,5 +50,22 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (collision.gameObject.GetComponent<PlayerMove>().isKilling == true)
+            {
+                health--;
+                if (health <= 0)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else
+            {
+                collision.gameObject.GetComponent<PlayerMove>().Death();
+            }
+        }
+    }
 }

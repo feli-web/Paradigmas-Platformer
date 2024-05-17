@@ -8,6 +8,7 @@ TagManager:
   - Banana
   - Key
   - Door
+  - Spike
   layers:
   - Default
   - TransparentFX
