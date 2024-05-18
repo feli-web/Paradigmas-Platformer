@@ -3,9 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
+
+    [Header("movimiento")]
     public float speed;
     public float jumpForce;
 
+    [Header("condicion salto")]
     public Transform groundCheck;
     public bool isGrounded;
     public bool isKilling;
@@ -18,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     SpriteRenderer sr;
     CanvasManager cm;
 
+    [Header("salto")]
     bool unLocked;
     int jumpCount; // New variable for tracking jumps
     public int maxJumps = 2; // Maximum number of jumps allowed

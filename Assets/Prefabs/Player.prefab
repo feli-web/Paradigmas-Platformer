@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92fe5febedf958b41a0e5e8dd61f0318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
   jumpForce: 5
   groundCheck: {fileID: 2098461040978930161}
   isGrounded: 0
@@ -144,6 +144,7 @@ MonoBehaviour:
     m_Bits: 64
   bounce: {fileID: 6200000, guid: ea3280aaff7930f41b65f4fbd00bc87d, type: 2}
   normal: {fileID: 6200000, guid: e74569b769d5dff47821b63bd47997ea, type: 2}
+  maxJumps: 2
 --- !u!50 &5251314694971164464
 Rigidbody2D:
   serializedVersion: 4

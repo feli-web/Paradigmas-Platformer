@@ -20,7 +20,7 @@ public class CameraMovementUpward : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("LoseScreen");
+            SceneManager.LoadScene(2);
         }
     }
     void MoveCam()
