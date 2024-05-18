@@ -133,6 +133,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -440,7 +464,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      puerta_0: -6855218837941648915
+      puerta_1: -6505528396960538005
+      puerta_10: 1113465767977513665
+      puerta_11: 8382268192897823073
+      puerta_12: 5510095508927732553
+      puerta_13: -4690194329767887493
+      puerta_2: -982712705793107067
+      puerta_3: -3813570373979458377
+      puerta_4: 9169966169828459220
+      puerta_5: -5968507432536171673
+      puerta_6: 6552401959779807038
+      puerta_7: 7993500658603361697
+      puerta_8: -61326804395209519
+      puerta_9: -1877652867011585649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

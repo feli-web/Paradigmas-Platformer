@@ -20,6 +20,7 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     CanvasManager cm;
+    Animator anim;
 
     [Header("salto")]
     bool unLocked;
@@ -31,6 +32,7 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         cm = FindFirstObjectByType<CanvasManager>();
+        anim = GetComponent<Animator>();
         unLocked = false;
         jumpCount = 0; // Initialize jump count
     }
@@ -56,6 +58,9 @@ public class PlayerMove : MonoBehaviour
         }
 
         PhysicsChange();
+
+        anim.SetFloat("Speed", Mathf.Abs(x));
+        anim.SetBool("IsGrounded", isGrounded);
     }
 
     public void Movement(float xMov)

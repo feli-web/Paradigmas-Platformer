@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3388689716204837408}
   - component: {fileID: 8375779452625751380}
   - component: {fileID: 1841095286570992355}
+  - component: {fileID: 4173815215971349269}
   m_Layer: 0
   m_Name: Rhino
   m_TagString: Untagged
@@ -224,3 +225,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 7, y: 0.11971858}
   m_EdgeRadius: 0
+--- !u!95 &4173815215971349269
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5356299547730942613}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f2f870b996e1ad4c9943aa410b6b9b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
