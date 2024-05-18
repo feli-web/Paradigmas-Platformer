@@ -132,6 +132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bee
       objectReference: {fileID: 0}
+    - target: {fileID: 4081318815875117331, guid: f4fe05850320b2941a136c71e0fbfdfd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 403143552}
     - target: {fileID: 5247782864019977266, guid: f4fe05850320b2941a136c71e0fbfdfd, type: 3}
       propertyPath: m_Size.y
       value: 4.359403
@@ -830,6 +834,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!1 &403143552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5937250283172699711, guid: 488aa02fb6a75864c9a236cb14ffdc89, type: 3}
+  m_PrefabInstance: {fileID: 1514372222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &424247193
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,6 +8163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bee (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4081318815875117331, guid: f4fe05850320b2941a136c71e0fbfdfd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 403143552}
     - target: {fileID: 5247782864019977266, guid: f4fe05850320b2941a136c71e0fbfdfd, type: 3}
       propertyPath: m_Size.y
       value: 3.5176215
@@ -8353,6 +8366,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58181934691afa443bc86a65fa7386a1, type: 3}
+--- !u!1001 &1340403943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7818260789264612947, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_Name
+      value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.3979716
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.62915
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016471881638485432, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a80558910a51cf14d9bd1926a6b860c9, type: 3}
 --- !u!1001 &1514372222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8422,6 +8492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bee (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4081318815875117331, guid: f4fe05850320b2941a136c71e0fbfdfd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 403143552}
     - target: {fileID: 5247782864019977266, guid: f4fe05850320b2941a136c71e0fbfdfd, type: 3}
       propertyPath: m_Size.y
       value: 6.374513
@@ -12852,3 +12926,4 @@ SceneRoots:
   - {fileID: 1514372222}
   - {fileID: 883006645}
   - {fileID: 1109242950}
+  - {fileID: 1340403943}

@@ -21,11 +21,12 @@ public class PlayerMove : MonoBehaviour
     SpriteRenderer sr;
     CanvasManager cm;
     Animator anim;
+    bool unLocked;
 
     [Header("salto")]
-    bool unLocked;
-    int jumpCount; // New variable for tracking jumps
-    public int maxJumps = 2; // Maximum number of jumps allowed
+
+    int jumpCount; 
+    public int maxJumps = 2; 
 
     void Start()
     {
@@ -34,10 +35,10 @@ public class PlayerMove : MonoBehaviour
         cm = FindFirstObjectByType<CanvasManager>();
         anim = GetComponent<Animator>();
         unLocked = false;
-        jumpCount = 0; // Initialize jump count
+        jumpCount = 0; 
     }
 
-    // Update is called once per frame
+  
     void FixedUpdate()
     {
         float x = Input.GetAxis("Horizontal");
@@ -54,7 +55,7 @@ public class PlayerMove : MonoBehaviour
 
         if (isGrounded)
         {
-            jumpCount = 0; // Reset jump count when grounded
+            jumpCount = 0; 
         }
 
         PhysicsChange();
@@ -80,7 +81,7 @@ public class PlayerMove : MonoBehaviour
     public void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        jumpCount++; // Increment jump count
+        jumpCount++; 
     }
 
     public void PhysicsChange()
