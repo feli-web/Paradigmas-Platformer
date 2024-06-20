@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class PlayerMove : MonoBehaviour
     public Transform groundCheck;
     public bool isGrounded;
     public bool isKilling;
+    bool isInvincible = false;
     public LayerMask groundMask;
     public LayerMask killMask;
     public PhysicsMaterial2D bounce;
@@ -98,7 +100,31 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Spike"))
         {
-            Death();
+            if (!isInvincible)
+            {
+                Death();
+            }
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            if (!isInvincible)
+            {
+                if (isKilling)
+                {
+                    Destroy(collision.gameObject);
+                }
+                else
+                {
+                    Death();
+                }
+            }
+            if (isInvincible)
+            {
+                Destroy(collision.gameObject);
+            }
         }
     }
 
@@ -106,5 +132,13 @@ public class PlayerMove : MonoBehaviour
     {
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene);
+    }
+    public IEnumerator Invincible(float duration)
+    {
+        isInvincible = true;
+        sr.color = Color.red;
+        yield return new WaitForSeconds(duration);
+        isInvincible = false;
+        sr.color = Color.white;
     }
 }

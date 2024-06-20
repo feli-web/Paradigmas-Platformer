@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
     public float speed;
-    public int health;
     public float minX;
     public float maxX;
 
@@ -52,20 +51,6 @@ public class Enemy : MonoBehaviour
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (collision.gameObject.GetComponent<PlayerMove>().isKilling == true)
-            {
-                health--;
-                if (health <= 0)
-                {
-                    Destroy(gameObject);
-                }
-            }
-            else
-            {
-                collision.gameObject.GetComponent<PlayerMove>().Death();
-            }
-        }
+       
     }
 }

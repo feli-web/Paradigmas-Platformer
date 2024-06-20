@@ -12,13 +12,7 @@ public class Bee : Enemy
         
     }
 
-    protected override void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject.GetComponent<PlayerMove>().Death();
-        }
-    }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
