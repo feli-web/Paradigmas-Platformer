@@ -21,7 +21,6 @@ public class PlayerMove : MonoBehaviour
     SpriteRenderer sr;
     CanvasManager cm;
     Animator anim;
-    bool unLocked;
 
     [Header("salto")]
 
@@ -34,7 +33,6 @@ public class PlayerMove : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         cm = FindFirstObjectByType<CanvasManager>();
         anim = GetComponent<Animator>();
-        unLocked = false;
         jumpCount = 0; 
     }
 
@@ -98,28 +96,6 @@ public class PlayerMove : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Banana"))
-        {
-            Destroy(collision.gameObject);
-            cm.AddBanana();
-        }
-        if (collision.gameObject.CompareTag("Key"))
-        {
-            Destroy(collision.gameObject);
-            unLocked = true;
-        }
-        if (collision.gameObject.CompareTag("Door") && unLocked == true)
-        {
-            int scene = SceneManager.GetActiveScene().buildIndex;
-            if (SceneManager.sceneCount == scene + 1)
-            {
-                SceneManager.LoadScene(0);
-            }
-            else
-            {
-                SceneManager.LoadScene(scene + 1);
-            }
-        }
         if (collision.gameObject.CompareTag("Spike"))
         {
             Death();

@@ -9,6 +9,7 @@ TagManager:
   - Key
   - Door
   - Spike
+  - Canvas
   layers:
   - Default
   - TransparentFX
