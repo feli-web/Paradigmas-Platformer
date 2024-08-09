@@ -7,9 +7,11 @@ using UnityEngine.SceneManagement;
 public class CanvasManager : MonoBehaviour
 {
     int bananas;
+    public int hearts;
     float time;
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI bananaText;
+    public TextMeshProUGUI heartText;
     void Start()
     {
         Time.timeScale = 1.0f;
@@ -20,7 +22,7 @@ public class CanvasManager : MonoBehaviour
     {
         time += Time.deltaTime;
         timeText.text = time.ToString("F2");
-
+        heartText.text = hearts.ToString("D2");
     }
 
     public void AddBanana()
@@ -28,4 +30,5 @@ public class CanvasManager : MonoBehaviour
         bananas++;
         bananaText.text = bananas.ToString("D2");
     }
+        
 }

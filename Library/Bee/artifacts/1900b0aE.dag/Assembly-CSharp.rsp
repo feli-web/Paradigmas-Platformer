@@ -394,6 +394,7 @@
 "Assets/Scripts/Gate.cs"
 "Assets/Scripts/Invincibility.cs"
 "Assets/Scripts/Key.cs"
+"Assets/Scripts/LifeData.cs"
 "Assets/Scripts/Menu.cs"
 "Assets/Scripts/OneWay.cs"
 "Assets/Scripts/PauseManager.cs"

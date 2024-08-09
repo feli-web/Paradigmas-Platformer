@@ -27,13 +27,17 @@ public class PlayerMove : MonoBehaviour
     [Header("salto")]
 
     int jumpCount; 
-    public int maxJumps = 2; 
+    public int maxJumps = 2;
 
+    [Header("Vida")]
+    public LifeData ld;
     void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         cm = FindFirstObjectByType<CanvasManager>();
+        cm.hearts = ld.life;
         anim = GetComponent<Animator>();
         jumpCount = 0; 
     }
@@ -118,7 +122,7 @@ public class PlayerMove : MonoBehaviour
                 }
                 else
                 {
-                    Death();
+                    StartCoroutine(Death());
                 }
             }
             if (isInvincible)
@@ -128,10 +132,23 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    public void Death()
+    public IEnumerator Death()
     {
-        int scene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(scene);
+        ld.life--;
+        yield return new WaitForSeconds(0.1f);
+        cm.hearts = ld.life;
+        yield return new WaitForSeconds(0.1f);
+        if (ld.life > 0)
+        {
+            int scene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(scene);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+            ld.life = 3;
+        }
+        
     }
     public IEnumerator Invincible(float duration)
     {

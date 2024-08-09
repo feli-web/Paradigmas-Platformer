@@ -11,6 +11,8 @@ TagManager:
   - Spike
   - Canvas
   - Enemy
+  - Play
+  - Quit
   layers:
   - Default
   - TransparentFX

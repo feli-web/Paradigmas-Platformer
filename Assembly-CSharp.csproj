@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\PauseManager.cs" />
     <Compile Include="Assets\Scripts\CameraMovementUpward.cs" />
     <Compile Include="Assets\Scripts\Traps.cs" />
+    <Compile Include="Assets\Scripts\LifeData.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Slimes.cs" />
     <Compile Include="Assets\Scripts\Bee.cs" />
